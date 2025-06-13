@@ -61,6 +61,13 @@ body, html {
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
 }
 
+.about-hero {
+  min-height: 40vh;
+  background: url('images/The-Craft-Of-Storytelling.png') center/cover no-repeat;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+
 .hero h1 {
   font-family: 'Playfair Display', serif;
   font-size: 2.5rem;
