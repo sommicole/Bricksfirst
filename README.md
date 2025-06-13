@@ -2,7 +2,8 @@
 
 This repository hosts the static files for the **Bricks First Publishing** website.
 It is a small HTML/CSS project used to showcase upcoming releases and basic information
-about the publisher.
+about the publisher. The latest version includes a more visually engaging layout,
+SEO improvements, and clear calls to action for upcoming books.
 
 ## Previewing the Site
 
