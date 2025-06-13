@@ -53,6 +53,12 @@ body, html {
   color: #c53030;
 }
 
+/* Provide visible focus style for navigation links */
+.nav-links a:focus {
+  outline: 2px solid #c53030;
+  outline-offset: 2px;
+}
+
 .hero {
   min-height: 100vh;
   display: flex;
@@ -116,6 +122,19 @@ body, html {
 
 .btn:hover {
   background-color: #a81d1d;
+}
+
+/* Highlight buttons when focused for better accessibility */
+.btn:focus, button:focus {
+  background-color: #a81d1d;
+  outline: 2px solid #c53030;
+  outline-offset: 2px;
+}
+
+/* Visible outline for all other links when focused */
+a:focus {
+  outline: 2px solid #c53030;
+  outline-offset: 2px;
 }
 
 .release-banner {
