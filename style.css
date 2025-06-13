@@ -68,6 +68,13 @@ body, html {
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
 }
 
+.blog-hero {
+  min-height: 40vh;
+  background: url('images/study-desk-picture.png') center/cover no-repeat;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+
 .hero h1 {
   font-family: 'Playfair Display', serif;
   font-size: 2.5rem;
@@ -126,6 +133,16 @@ body, html {
   margin-bottom: 1rem;
 }
 
+.blog-promo {
+  text-align: center;
+  padding: 2rem 1.5rem;
+}
+
+.blog-promo h2 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 1rem;
+}
+
 .release-banner h2 {
   font-family: 'Playfair Display', serif;
   font-size: 1.5rem;
@@ -141,6 +158,23 @@ footer {
 .main-content {
   text-align: center;
   padding: 2rem;
+}
+
+.blog-post {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  text-align: left;
+}
+
+.blog-post h2 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 0.5rem;
+}
+
+.blog-post .post-date {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 1rem;
 }
 
 @media (min-width: 768px) {
