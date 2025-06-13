@@ -29,6 +29,7 @@ All of the website files live at the repository root:
 - `contact.html` – send us a message
 - `images/` – folder containing images such as book covers
 - `style.css` – styling for all pages
+- `script.js` – navigation and dynamic footer behavior
 
 Make your edits directly in these files and commit the changes. Once pushed to
 GitHub, the updated site will be redeployed by GitHub Pages.
