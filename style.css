@@ -6,6 +6,33 @@ body, html {
   color: #1A1A1A;
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: #1A1A1A;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.nav-links a:hover {
+  color: #c53030;
+}
+
 .hero {
   min-height: 100vh;
   display: flex;
@@ -69,7 +96,11 @@ body, html {
 .logo {
   max-width: 150px;
   height: auto;
-  margin-bottom: 1rem;
+}
+
+.navbar .logo {
+  max-width: 120px;
+  margin-bottom: 0;
 }
 
 .subscribe {
