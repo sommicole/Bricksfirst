@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About - Bricks First Publishing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="images/Bricks-First-Logo-Design.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html"><img src="images/Bricks-First-Logo-Design.png" alt="Bricks First Publishing logo" class="logo" /></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+    </ul>
+  </nav>
+  <header class="hero about-hero">
+    <h1>About Us</h1>
+  </header>
+  <main class="main-content">
+    <section class="release-banner">
+      <img src="images/The-Craft-Of-Storytelling.png" alt="Stack of books">
+      <div class="release-info">
+        <h2>Our Mission</h2>
+        <p>Bricks First Publishing delivers inspiring books that help you build the life you were made to live.</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; <span id="copyright-year"></span> Bricks First Publishing</p>
+  </footer>
+  <script>
+    document.getElementById('copyright-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
