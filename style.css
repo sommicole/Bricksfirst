@@ -1,0 +1,29 @@
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #FAF9F6;
+  color: #1A1A1A;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding: 60px 20px 30px;
+}
+
+main {
+  padding: 30px;
+}
+
+.featured-image {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f1f1f1;
+}
