@@ -44,7 +44,10 @@
       </section>
     </main>
   <footer>
-    <p>&copy; 2025 Bricks First Publishing</p>
+    <p>&copy; <span id="copyright-year"></span> Bricks First Publishing</p>
   </footer>
-</body>
+  <script>
+    document.getElementById('copyright-year').textContent = new Date().getFullYear();
+  </script>
+  </body>
 </html>
