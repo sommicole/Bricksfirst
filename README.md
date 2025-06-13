@@ -38,3 +38,7 @@ copy.
 
 The site includes a simple `404.html` so visitors are redirected to a friendly error page if they hit an unknown URL. If GitHub Pages is already enabled for the `main` branch, this page will automatically be served on 404 errors.
 
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
