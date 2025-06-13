@@ -30,3 +30,7 @@ GitHub, the updated site will be redeployed by GitHub Pages.
 Feel free to modify the HTML and CSS as needed to add new releases or update
 copy.
 
+## Custom 404 Page
+
+The site includes a simple `404.html` so visitors are redirected to a friendly error page if they hit an unknown URL. If GitHub Pages is already enabled for the `main` branch, this page will automatically be served on 404 errors.
+
