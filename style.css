@@ -33,6 +33,27 @@ body, html {
   font-weight: 700;
 }
 
+.release-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  padding: 2rem 1.5rem;
+}
+
+.release-banner img {
+  width: 80%;
+  max-width: 200px;
+  height: auto;
+}
+
+.release-banner h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  margin: 0 0 1rem;
+}
+
 footer {
   padding: 20px 0;
   text-align: center;
@@ -42,5 +63,18 @@ footer {
 @media (min-width: 768px) {
   .hero h1 {
     font-size: 3.5rem;
+  }
+  .release-banner {
+    flex-direction: row;
+    text-align: left;
+    justify-content: center;
+  }
+  .release-banner img {
+    max-width: 250px;
+    width: 250px;
+    margin-right: 2rem;
+  }
+  .release-banner h2 {
+    font-size: 2rem;
   }
 }
