@@ -17,7 +17,7 @@ For a hosted preview, the repository is configured to work with **GitHub Pages**
 
 ## Live Site
 
-You can view the published website at [https://bricksfirst.com](https://bricksfirst.com). The site serves the landing page from `index.html`, the shop page from [`shop.html`](https://bricksfirst.com/shop.html), and includes a custom [`404.html`](https://bricksfirst.com/404.html) for unknown URLs.
+You can view the published website at [https://bricksfirst.com](https://bricksfirst.com). The site serves the landing page from `index.html`, the shop page from [`shop.html`](https://bricksfirst.com/shop.html), the blog from [`blog.html`](https://bricksfirst.com/blog.html), and includes a custom [`404.html`](https://bricksfirst.com/404.html) for unknown URLs.
 
 ## Updating Content
 
@@ -25,6 +25,7 @@ All of the website files live at the repository root:
 
 - `index.html` – landing page with release information
 - `shop.html` – simple shop/coming-soon page
+- `blog.html` – latest news and updates
 - `images/` – folder containing images such as book covers
 - `style.css` – styling for all pages
 
