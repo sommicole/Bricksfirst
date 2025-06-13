@@ -29,6 +29,11 @@ body, html {
   font-weight: 700;
 }
 
+.nav-links .active {
+  color: #c53030;
+  border-bottom: 2px solid #c53030;
+}
+
 .nav-links a:hover {
   color: #c53030;
 }
