@@ -288,6 +288,24 @@ footer {
   text-align: center;
   padding: 2rem;
 }
+.post-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  justify-content: center;
+}
+
+.post-nav a {
+  text-decoration: none;
+  color: #1A1A1A;
+}
+
+.post-nav a:hover {
+  color: #c53030;
+}
 
 .blog-post {
   max-width: 800px;
