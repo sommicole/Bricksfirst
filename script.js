@@ -5,10 +5,14 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   const navToggle = document.querySelector('.nav-toggle');
-  const navLinks = document.querySelector('.nav-links');
+  const navLinks = document.querySelector('#primary-navigation');
   if (navToggle && navLinks) {
     navToggle.addEventListener('click', function () {
+      const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+      navToggle.setAttribute('aria-expanded', (!isExpanded).toString());
       navLinks.classList.toggle('open');
+      // retain focus on the toggle button for accessibility
+      navToggle.focus();
     });
   }
 });
