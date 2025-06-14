@@ -335,6 +335,30 @@ footer {
   color: var(--primary-color);
 }
 
+.blog-categories {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.category-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  justify-content: center;
+}
+
+.category-nav a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.category-nav a:hover {
+  color: var(--primary-color);
+}
+
 .blog-post {
   max-width: 800px;
   margin: 0 auto 2rem;
