@@ -13,6 +13,18 @@ document.addEventListener('DOMContentLoaded', function () {
       navLinks.classList.toggle('open');
       // retain focus on the toggle button for accessibility
       navToggle.focus();
+
+      // close the menu when any navigation link is clicked
+      document.querySelectorAll('.nav-links a').forEach(function (link) {
+        link.addEventListener(
+          'click',
+          function () {
+            navLinks.classList.remove('open');
+            navToggle.setAttribute('aria-expanded', 'false');
+          },
+          { once: true }
+        );
+      });
     });
   }
 });
