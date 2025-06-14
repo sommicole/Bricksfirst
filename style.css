@@ -446,10 +446,15 @@ footer {
     margin: 0;
     padding: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: transform 0.3s ease, opacity 0.3s ease;
   }
 
   .nav-links.open {
     display: flex;
+    opacity: 1;
+    transform: translateY(0);
   }
 
   .nav-toggle {

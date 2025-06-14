@@ -26,5 +26,17 @@ document.addEventListener('DOMContentLoaded', function () {
         );
       });
     });
+
+    // close the menu when clicking outside of it
+    document.addEventListener('click', function (event) {
+      if (
+        navLinks.classList.contains('open') &&
+        !navLinks.contains(event.target) &&
+        !navToggle.contains(event.target)
+      ) {
+        navLinks.classList.remove('open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
   }
 });
