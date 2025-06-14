@@ -284,6 +284,14 @@ footer {
   cursor: pointer;
 }
 
+/* Visible outline when hamburger menu receives focus */
+.nav-toggle:focus,
+.nav-toggle:focus-visible {
+  background-color: transparent;
+  outline: 2px solid #c53030;
+  outline-offset: 2px;
+}
+
 .nav-toggle span,
 .nav-toggle span::before,
 .nav-toggle span::after {
