@@ -1,9 +1,18 @@
+:root {
+  --primary-color: #c53030;
+  --secondary-color: #a81d1d;
+  --background-color: #FAF9F6;
+  --text-color: #1A1A1A;
+  --font-body: 'Lato', sans-serif;
+  --font-heading: 'Playfair Display', serif;
+}
+
 body, html {
   margin: 0;
   padding: 0;
-  font-family: 'Lato', sans-serif;
-  background-color: #FAF9F6;
-  color: #1A1A1A;
+  font-family: var(--font-body);
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 .skip-link {
@@ -39,23 +48,23 @@ body, html {
 }
 
 .nav-links a {
-  color: #1A1A1A;
+  color: var(--text-color);
   text-decoration: none;
   font-weight: 700;
 }
 
 .nav-links .active {
-  color: #c53030;
-  border-bottom: 2px solid #c53030;
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
 }
 
 .nav-links a:hover {
-  color: #c53030;
+  color: var(--primary-color);
 }
 
 /* Provide visible focus style for navigation links */
 .nav-links a:focus {
-  outline: 2px solid #c53030;
+  outline: 2px solid var(--primary-color);
   outline-offset: 2px;
 }
 
@@ -127,7 +136,7 @@ body, html {
 }
 
 .hero h1 {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-heading);
   font-size: clamp(2.5rem, 5vw, 3.5rem);
   font-weight: 700;
   margin-bottom: 1.5rem;
@@ -136,7 +145,7 @@ body, html {
 .btn {
   display: inline-block;
   padding: 0.75rem 1.5rem;
-  background-color: #c53030;
+  background-color: var(--primary-color);
   color: #fff;
   text-decoration: none;
   border-radius: 4px;
@@ -145,19 +154,19 @@ body, html {
 }
 
 .btn:hover {
-  background-color: #a81d1d;
+  background-color: var(--secondary-color);
 }
 
 /* Highlight buttons when focused for better accessibility */
 .btn:focus, button:focus {
-  background-color: #a81d1d;
-  outline: 2px solid #c53030;
+  background-color: var(--secondary-color);
+  outline: 2px solid var(--primary-color);
   outline-offset: 2px;
 }
 
 /* Visible outline for all other links when focused */
 a:focus {
-  outline: 2px solid #c53030;
+  outline: 2px solid var(--primary-color);
   outline-offset: 2px;
 }
 
@@ -192,7 +201,7 @@ a:focus {
 }
 
 .about-preview h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-heading);
   margin-bottom: 1rem;
 }
 
@@ -221,7 +230,7 @@ a:focus {
 }
 
 .book h3 {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-heading);
   margin: 0.5rem 0;
 }
 
@@ -236,7 +245,7 @@ a:focus {
 }
 
 .subscribe h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-heading);
   font-size: clamp(1.5rem, 2vw + 1rem, 2rem);
   margin-bottom: 1rem;
 }
@@ -247,7 +256,7 @@ a:focus {
 }
 
 .blog-promo h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-heading);
   margin-bottom: 1rem;
 }
 
@@ -257,7 +266,7 @@ a:focus {
 }
 
 .latest-posts h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-heading);
   margin-bottom: 1rem;
 }
 
@@ -283,7 +292,7 @@ a:focus {
 }
 
 .blog-preview h3 {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-heading);
   margin: 0.5rem 0;
 }
 
@@ -292,7 +301,7 @@ a:focus {
 }
 
 .release-banner h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-heading);
   font-size: clamp(1.5rem, 2vw + 1rem, 2rem);
   margin: 0 0 1rem;
 }
@@ -319,11 +328,11 @@ footer {
 
 .post-nav a {
   text-decoration: none;
-  color: #1A1A1A;
+  color: var(--text-color);
 }
 
 .post-nav a:hover {
-  color: #c53030;
+  color: var(--primary-color);
 }
 
 .blog-post {
@@ -333,7 +342,7 @@ footer {
 }
 
 .blog-post h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-heading);
   margin-bottom: 0.5rem;
 }
 
@@ -405,7 +414,7 @@ footer {
 .nav-toggle:focus,
 .nav-toggle:focus-visible {
   background-color: transparent;
-  outline: 2px solid #c53030;
+  outline: 2px solid var(--primary-color);
   outline-offset: 2px;
 }
 
@@ -415,7 +424,7 @@ footer {
   display: block;
   width: 25px;
   height: 2px;
-  background-color: #1A1A1A;
+  background-color: var(--text-color);
   position: relative;
 }
 
