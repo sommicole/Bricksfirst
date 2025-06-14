@@ -39,4 +39,25 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   }
+
+  const searchInput = document.getElementById('search-input');
+  const categorySelect = document.getElementById('category-select');
+  const posts = document.querySelectorAll('.post-link');
+
+  function filterPosts() {
+    const term = searchInput ? searchInput.value.toLowerCase() : '';
+    const category = categorySelect ? categorySelect.value : 'all';
+    posts.forEach(function (post) {
+      const matchesTerm = post.innerText.toLowerCase().includes(term);
+      const matchesCategory = category === 'all' || post.dataset.category === category;
+      post.style.display = matchesTerm && matchesCategory ? 'block' : 'none';
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener('input', filterPosts);
+  }
+  if (categorySelect) {
+    categorySelect.addEventListener('change', filterPosts);
+  }
 });

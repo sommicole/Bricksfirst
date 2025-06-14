@@ -19,7 +19,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=1.2" />
+  <link rel="stylesheet" href="style.css?v=1.3" />
 </head>
 <body>
   <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -42,21 +42,49 @@
   </header>
 
   <main id="main-content" class="main-content">
+    <section class="filter-bar">
+      <label for="search-input" class="visually-hidden">Search</label>
+      <input id="search-input" type="search" placeholder="Search posts" aria-label="Search blog posts" />
+      <label for="category-select" class="visually-hidden">Category</label>
+      <select id="category-select" aria-label="Filter by category">
+        <option value="all">All Categories</option>
+        <option value="faith">Faith</option>
+        <option value="writing">Writing</option>
+        <option value="news">News</option>
+      </select>
+    </section>
+
     <section class="posts-gallery">
 
-      <a href="/blog/faith-and-fantasy.html" class="post-link">
-        <img src="/images/blog/faith-and-fantasy-thumbnail.jpg" alt="Faith and Fantasy Thumbnail" />
+      <a href="/blog/faith-and-fantasy.html" class="post-link blog-preview" data-category="faith">
+        <img src="images/study-desk-picture.png" alt="Faith and Fantasy Thumbnail" />
         <h3>Faith and Fantasy</h3>
         <p class="excerpt">How imagination opens the door to belief—from Lewis to Tolkien and beyond.</p>
       </a>
 
-      <a href="/blog/why-stories-matter.html" class="post-link">
-        <img src="/images/The-Craft-Of-Storytelling.png" alt="Why Stories Matter Thumbnail" />
+      <a href="/blog/why-stories-matter.html" class="post-link blog-preview" data-category="writing">
+        <img src="images/Explore-Our-Books.png" alt="Why Stories Matter Thumbnail" />
         <h3>Why Stories Matter</h3>
         <p class="excerpt">Discover why storytelling still matters and how powerful narratives shape culture, heal hearts, and build legacy.</p>
       </a>
 
-      <!-- Add more blog post cards here as you create them -->
+      <a href="/blog/welcome-post.html" class="post-link blog-preview" data-category="news">
+        <img src="images/study-desk-picture.png" alt="Welcome to Our New Blog thumbnail" />
+        <h3>Welcome to Our New Blog</h3>
+        <p class="excerpt">We're thrilled to launch our blog where we'll share updates and behind-the-scenes looks at our books.</p>
+      </a>
+
+      <a href="/blog/behind-the-scenes.html" class="post-link blog-preview" data-category="writing">
+        <img src="images/The-Rabbit-Book-Cover.png" alt="Behind the Scenes of The Rabbit thumbnail" />
+        <h3>Behind the Scenes of The Rabbit</h3>
+        <p class="excerpt">Discover how our upcoming release came to life and what inspired the story.</p>
+      </a>
+
+      <a href="/blog/aspiring-authors.html" class="post-link blog-preview" data-category="writing">
+        <img src="images/The-Craft-Of-Storytelling.png" alt="Tips for Aspiring Authors thumbnail" />
+        <h3>Tips for Aspiring Authors</h3>
+        <p class="excerpt">Looking to write your first book? Here are some practical tips to get you started.</p>
+      </a>
 
     </section>
 
