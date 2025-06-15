@@ -60,4 +60,65 @@ document.addEventListener('DOMContentLoaded', function () {
   if (categorySelect) {
     categorySelect.addEventListener('change', filterPosts);
   }
+
+  // -----------------------------------------------
+  // Promotional popup for Brick Layers Community
+  // -----------------------------------------------
+  const popupInterval = 6 * 60 * 1000; // 6 minutes
+  let popupOverlay;
+
+  function showPopup() {
+    if (popupOverlay) {
+      popupOverlay.style.display = 'flex';
+      const firstInput = popupOverlay.querySelector('input');
+      if (firstInput) {
+        firstInput.focus();
+      }
+    }
+  }
+
+  function hidePopup() {
+    if (popupOverlay) {
+      popupOverlay.style.display = 'none';
+    }
+  }
+
+  function createPopup() {
+    const overlay = document.createElement('div');
+    overlay.className = 'popup-overlay';
+    overlay.innerHTML = `
+      <div class="popup" role="dialog" aria-labelledby="popup-heading">
+        <button type="button" class="popup-close" aria-label="Close">&times;</button>
+        <h2 id="popup-heading">Join the Brick Layers Community</h2>
+        <p>Sign up today and get 30% off your first purchase!</p>
+        <form class="popup-form" action="https://formspree.io/f/mayvkkyk" method="POST">
+          <label for="popup-name" class="visually-hidden">Name</label>
+          <input id="popup-name" name="name" type="text" placeholder="Name" required>
+          <label for="popup-email" class="visually-hidden">Email</label>
+          <input id="popup-email" name="email" type="email" placeholder="Email" required>
+          <button type="submit" class="btn">Get Discount</button>
+        </form>
+      </div>`;
+    document.body.appendChild(overlay);
+
+    const closeButton = overlay.querySelector('.popup-close');
+    const form = overlay.querySelector('.popup-form');
+
+    closeButton.addEventListener('click', hidePopup);
+    overlay.addEventListener('click', function (e) {
+      if (e.target === overlay) {
+        hidePopup();
+      }
+    });
+    form.addEventListener('submit', hidePopup);
+
+    return overlay;
+  }
+
+  popupOverlay = createPopup();
+
+  setTimeout(function () {
+    showPopup();
+    setInterval(showPopup, popupInterval);
+  }, popupInterval);
 });
