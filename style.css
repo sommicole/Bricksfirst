@@ -621,3 +621,11 @@ footer {
   border-radius: 4px;
   font-family: inherit;
 }
+
+/* Message displayed when no blog posts match the filter */
+#no-results.no-results {
+  text-align: center;
+  font-weight: 700;
+  margin: 1rem 0;
+  display: none;
+}

@@ -43,15 +43,24 @@ document.addEventListener('DOMContentLoaded', function () {
   const searchInput = document.getElementById('search-input');
   const categorySelect = document.getElementById('category-select');
   const posts = document.querySelectorAll('.post-link');
+  const noResults = document.getElementById('no-results');
 
   function filterPosts() {
     const term = searchInput ? searchInput.value.toLowerCase() : '';
     const category = categorySelect ? categorySelect.value : 'all';
+    let visibleCount = 0;
     posts.forEach(function (post) {
       const matchesTerm = post.innerText.toLowerCase().includes(term);
       const matchesCategory = category === 'all' || post.dataset.category === category;
-      post.style.display = matchesTerm && matchesCategory ? 'block' : 'none';
+      const show = matchesTerm && matchesCategory;
+      post.style.display = show ? 'block' : 'none';
+      if (show) {
+        visibleCount += 1;
+      }
     });
+    if (noResults) {
+      noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+    }
   }
 
   if (searchInput) {
